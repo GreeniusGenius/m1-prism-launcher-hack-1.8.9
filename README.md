@@ -18,7 +18,7 @@ You'll also need a standard install of Prism Launcher. I'm also using Forge, and
 Open a terminal window.(it's in the `Utilities` folder inside of `Applications`, or you can do Cmd + Space and search for Terminal, and press enter)
 
 
-I made a directory called `NativeMC` and gave it [This icon from macosicons.com] (https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/575f4e76ca7ad6d4fb49776b2bea2eb6_OoCOxqkIF9.icns)
+I made a directory called `NativeMC` and gave it [This icon from macosicons.com](https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/575f4e76ca7ad6d4fb49776b2bea2eb6_OoCOxqkIF9.icns)
 
 The lines beginning with `#` below are comments and don't need to be entered, but it's fine to copy paste them in along with the rest.
 
