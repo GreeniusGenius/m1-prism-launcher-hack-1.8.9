@@ -41,7 +41,7 @@ Create a new Minecraft instance in Prism Launcher (or duplicate an existing one)
 
 Go to Settings, then make sure the "Java Installation" checkbox is checked. Then hit "Auto-detect".
 
-![Screenshot of instance Settings pane with "Auto-detect" button highlighted](./screenshots/detect-jvm.png)
+![Screenshot of instance Settings pane with "Auto-detect" button highlighted](./screenshots/detect-jre.png)
 
 It should open a window with a list of Java versions. Find the one that says "zulu-8" in the path and select it, then hit OK. (You may need to resize the window to see the full path.)
 
