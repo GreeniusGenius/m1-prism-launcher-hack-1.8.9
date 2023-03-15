@@ -2,7 +2,8 @@
 
 Want to get Minecraft running natively on a Mac with an Apple Silicon (M series) chip? Thanks to [the excellent work](https://gist.github.com/tanmayb123/d55b16c493326945385e815453de411a) by [Tanmay Bakshi](https://gist.github.com/tanmayb123), it's possible!
 
-This fork of the original repo, is only intended to be used with Minecraft 1.8.9.
+This fork of the [https://github.com/yusefnapora/m1-multimc-hack ](original repo), but I should have really directly forked [this repository] (https://github.com/ankleBowl/m1-multimc-hack-1.8).
+This is only intended to be used with Minecraft 1.8.9.
 
 This repo contains a wrapper script to be used with [Prism Launcher](https://prismlauncher.org) that will configure any Prism Launcher instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JRE, and it should just work.
 
@@ -60,4 +61,4 @@ Well if there are any issues, let me know, but there are no guarantees that I ca
 
 The files `lwjglfat.jar` and all libraries in the `lwjglnatives` folder were compiled by Tanmay from the source available at https://www.lwjgl.org/source and are subject to its [BSD-style license terms](https://github.com/LWJGL/lwjgl3/blob/master/LICENSE.md).
 
-The original `mcwrap.py` script was written by Yusef Napora, and is public domain. I have forked it to make it play nicely with Prism Launcher and Forge.
+The original `mcwrap.py` script was written by Yusef Napora, a key fork is by [AnkleBowl](https://github.com/ankleBowl/m1-multimc-hack-1.8) and is public domain. I have made some minor changes to make it play nicely with Prism Launcher and Forge.
