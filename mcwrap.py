@@ -71,8 +71,8 @@ def natives_dir():
 
 def run():
     mc_args = rewrite_mc_args(sys.argv[1:])
-    #if not os.path.isdir(natives_dir()):
-        #os.mkdir(natives_dir())
+    if not os.path.isdir(natives_dir()):
+        os.mkdir(natives_dir())
     #edited line(s) above - what was happening was that when I closed the instance that I applied this script to, the folder containing the LWJGL natives was removed for some reason, hence this small modification checks if the folder exists (in edge cases it doesn't get removed, and we don't want to create a duplicate etc.), and if it has been, regenerates the folder.
     copy_native_libs(natives_dir())
     launch_mc(mc_args)
