@@ -1,31 +1,33 @@
-# m1-multimc-hack
+# m1-prism-launcher-hack-1.8.9
 
-Want to get Minecraft running natively on a Mac with an M1 "Apple Silicon" chip? Thanks to [the excellent work](https://gist.github.com/tanmayb123/d55b16c493326945385e815453de411a) by [Tanmay Bakshi](https://gist.github.com/tanmayb123), it's possible!
+Want to get Minecraft running natively on a Mac with an Apple Silicon (M series) chip? Thanks to [the excellent work](https://gist.github.com/tanmayb123/d55b16c493326945385e815453de411a) by [Tanmay Bakshi](https://gist.github.com/tanmayb123), it's possible!
 
-This repo contains a wrapper script to be used with [MultiMC](https://multimc.org) that will configure any MultiMC instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JDK, and it should just work.
+This fork of the original repo, is only intended to be used with Minecraft 1.8.9.
+
+This repo contains a wrapper script to be used with [Prism Launcher](https://prismlauncher.org) that will configure any Prism Launcher instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JDK, and it should just work.
 
 ## Setup and Usage
 
 ### Pre-requisites
 
-First, install the [Zulu Java 11 JDK for macOS ARM64](https://cdn.azul.com/zulu/bin/zulu11.43.1015-ca-jdk11.0.9.1-macos_aarch64.dmg).
-
-You'll also need a standard install of MultiMC.
+First, install the [Zulu Java 8 JRE for macOS ARM64](https://cdn.azul.com/zulu/bin/zulu8.68.0.21-ca-jre8.0.362-macosx_aarch64.dmg).
+You'll also need a standard install of Prism Launcher. I'm also using Forge, and various performance and Hypixel QoL mods, but this should work regardless.
 
 ### Clone this repo
 
-Open a terminal (it's in the `Utilities` folder inside of `Applications`, if you're new to command line stuff).
+Open a terminal window.(it's in the `Utilities` folder inside of `Applications`, or you can do Cmd + Space and search for Terminal, and press enter)
 
-To make it easy to follow along, we'll make a new directory called `Minecraft` in our home folder. If you'd rather put this repo somewhere else, that's fine - the location doesn't really matter. If you do put it somewhere else, remember to change the references to it in the commands below.
+
+I made a directory called `NativeMC` and gave it [This icon from macosicons.com] (https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/575f4e76ca7ad6d4fb49776b2bea2eb6_OoCOxqkIF9.icns)
 
 The lines beginning with `#` below are comments and don't need to be entered, but it's fine to copy paste them in along with the rest.
 
 ```shell
 # Make a place to put our wrapper script and libraries
-mkdir -p ~/Minecraft
+mkdir -p ~/NativeMC
 
 # enter the new directory
-cd ~/Minecraft
+cd ~/NativeMC
 
 # clone this repo
 git clone https://github.com/yusefnapora/m1-multimc-hack.git
