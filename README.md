@@ -45,9 +45,9 @@ Go to Settings, then make sure the "Java Installation" checkbox is checked. Then
 
 It should open a window with a list of Java versions. Find the one that says "zulu-8" in the path and select it, then hit OK. (You may need to resize the window to see the full path.)
 
-![Screenshot of JVM list with correct JVM highlighted](./screenshots/select-zulu-jvm.png)
+![Screenshot of JVM list with correct JVM highlighted](./screenshots/select-zulu-jre.png)
 
-Still in the Settings pane, switch to the "Custom Commands" tab. Check the "Custom Commands" checkbox. In the "Wrapper Command" box, enter the full path to the `mcwrap.py` script from this repo, e.g. `/Users/your-username/stuff/m1-multimc-hack/mcwrap.py`. The easiest way to do this, is to navigate to the mcwrap.py file in finder, open the contextual menu (try two finger clicking on a Magic Trackpad, right clicking on a traditional mouse, control clicking on a magic mouse etc.), then while holding Option / Alt ⌥, the copy option will become Copy "/Users/your-username/stuff/m1-multimc-hack/mcwrap.py" as pathname. 
+Still in the Settings pane, switch to the "Custom Commands" tab. Check the "Custom Commands" checkbox. In the "Wrapper Command" box, enter the full path to the `mcwrap.py` script from this repo, e.g. `/Users/your-username/stuff/m1-prism-launcher-hack-1.8.9/mcwrap.py`. The easiest way to do this, is to navigate to the mcwrap.py file in finder, open the contextual menu (try two finger clicking on a Magic Trackpad, right clicking on a traditional mouse, control clicking on a magic mouse etc.), then while holding Option / Alt ⌥, the copy option will become Copy "/Users/your-username/stuff/m1-prism-launcher-hack-1.8.9/mcwrap.py" as pathname. 
 
 ### Mods
 
