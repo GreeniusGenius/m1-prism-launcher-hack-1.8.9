@@ -4,7 +4,7 @@ Want to get Minecraft running natively on a Mac with an Apple Silicon (M series)
 
 This fork of the original repo, is only intended to be used with Minecraft 1.8.9.
 
-This repo contains a wrapper script to be used with [Prism Launcher](https://prismlauncher.org) that will configure any Prism Launcher instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JDK, and it should just work.
+This repo contains a wrapper script to be used with [Prism Launcher](https://prismlauncher.org) that will configure any Prism Launcher instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JRE, and it should just work.
 
 ## Setup and Usage
 
@@ -43,7 +43,7 @@ Go to Settings, then make sure the "Java Installation" checkbox is checked. Then
 
 ![Screenshot of instance Settings pane with "Auto-detect" button highlighted](./screenshots/detect-jre.png)
 
-It should open a window with a list of Java versions. Find the one that says "zulu-8" in the path and select it, then hit OK. (You may need to resize the window to see the full path.)
+It should open a window with a list of Java versions. Find the one that says "zulu-8" in the path and select it, then hit OK. (You almost certainly will need to resize the window to see the full path.)
 
 ![Screenshot of JVM list with correct JVM highlighted](./screenshots/select-zulu-jre.png)
 
