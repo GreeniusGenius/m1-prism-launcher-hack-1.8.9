@@ -19,7 +19,12 @@ def this_dir():
 def lwjgl_jar_path():
     return os.path.join(this_dir(), 'lwjglfat.jar')
 
-
+def openal_jar_path():
+    return os.path.join(this_dir(), 'openal.jar')
+    
+def lwjglutil_jar_path():
+    return os.path.join(this_dir(), 'lwjgl_util.jar')
+    
 def m1_native_libs_dir():
     return os.path.join(this_dir(), 'lwjglnatives')
 
@@ -36,6 +41,8 @@ def copy_native_libs(dest_dir):
 def rewrite_classpath(cp):
     jars = [j for j in cp.split(':') if 'lwjgl' not in j]
     jars.append(lwjgl_jar_path())
+    jars.append(openal_jar_path())
+    jars.append(lwjglutil_jar_path())
     logging.info('rewritten classpath: {}'.format(jars))
     return ':'.join(jars)
 
@@ -64,6 +71,9 @@ def natives_dir():
 
 def run():
     mc_args = rewrite_mc_args(sys.argv[1:])
+    if not os.path.isdir(natives_dir()):
+        os.mkdir(natives_dir())
+    #edited line(s) above - what was happening was that when I closed the instance that I applied this script to, the folder containing the LWJGL natives was removed for some reason, hence this small modification checks if the folder exists (in edge cases it doesn't get removed, and we don't want to create a duplicate etc.), and if it has been, regenerates the folder.
     copy_native_libs(natives_dir())
     launch_mc(mc_args)
 
