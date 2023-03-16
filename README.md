@@ -5,7 +5,7 @@ Want to get Minecraft running natively on a Mac with an Apple Silicon (M series)
 This fork of the [https://github.com/yusefnapora/m1-multimc-hack ](original repo), but I should have really directly forked [this repository] (https://github.com/ankleBowl/m1-multimc-hack-1.8).
 This is only intended to be used with Minecraft 1.8.9.
 
-This repo contains a wrapper script to be used with [Prism Launcher](https://prismlauncher.org) that will configure any Prism Launcher instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JRE, and it should just work.
+This repository contains a wrapper script to be used with [Prism Launcher](https://prismlauncher.org) that will configure any Prism Launcher instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JRE, and it should just work.
 
 ## Setup and Usage
 
@@ -13,6 +13,7 @@ This repo contains a wrapper script to be used with [Prism Launcher](https://pri
 
 First, install the [Zulu Java 8 JRE for macOS ARM64](https://cdn.azul.com/zulu/bin/zulu8.68.0.21-ca-jre8.0.362-macosx_aarch64.dmg).
 You'll also need a standard install of Prism Launcher. I'm also using Forge, and various performance and Hypixel QoL mods, but this should work regardless.
+I suggest you install the JRE over the JDK, unless you plan to be doing mod development, as it will just be an unecessary use of storage otherwise.
 
 ### Clone this repo
 
