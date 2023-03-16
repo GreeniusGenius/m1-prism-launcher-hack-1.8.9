@@ -11,7 +11,7 @@ This repository contains a wrapper script to be used with [Prism Launcher](https
 
 ### Pre-requisites
 
-First, install the [Zulu Java 8 JRE for macOS ARM64](https://cdn.azul.com/zulu/bin/zulu8.68.0.21-ca-jre8.0.362-macosx_aarch64.dmg).
+First, install the [Zulu Java 8 JRE for macOS ARM64](https://cdn.azul.com/zulu/bin/zulu8.68.0.21-ca-jre8.0.362-macosx_aarch64.dmg). 
 You'll also need a standard install of Prism Launcher. I'm also using Forge, and various performance and Hypixel QoL mods, but this should work regardless.
 I suggest you install the JRE over the JDK, unless you plan to be doing mod development, as it will just be an unecessary use of storage otherwise.
 
@@ -50,6 +50,8 @@ It should open a window with a list of Java versions. Find the one that says "zu
 ![Screenshot of JVM list with correct JVM highlighted](./screenshots/select-zulu-jre.png)
 
 Still in the Settings pane, switch to the "Custom Commands" tab. Check the "Custom Commands" checkbox. In the "Wrapper Command" box, enter the full path to the `mcwrap.py` script from this repo, e.g. `/Users/your-username/stuff/m1-prism-launcher-hack-1.8.9/mcwrap.py`. The easiest way to do this, is to navigate to the mcwrap.py file in finder, open the contextual menu (try two finger clicking on a Magic Trackpad, right clicking on a traditional mouse, control clicking on a magic mouse etc.), then while holding Option / Alt ⌥, the copy option will become Copy "/Users/your-username/stuff/m1-prism-launcher-hack-1.8.9/mcwrap.py" as pathname. 
+
+![Screenshot of Prism Launcher with example of path to wrapper command in correct box.](./screenshots/enter-wrapper-command.png)
 
 ### Mods
 
