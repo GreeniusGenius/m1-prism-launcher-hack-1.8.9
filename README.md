@@ -55,7 +55,7 @@ Still in the Settings pane, switch to the "Custom Commands" tab. Check the "Cust
 
 ### Mods
 
-Forge works great, I'm using the most recent version ever released for 1.8.9, and the [latest version of optifine for 1.8.9] (https://optifine.net/adloadx?f=preview_OptiFine_1.8.9_HD_U_M6_pre2.jar) as well as various other mods. 
+Forge works great, I'm using the most recent version ever released for 1.8.9, and the [latest version of optifine for 1.8.9](https://optifine.net/adloadx?f=preview_OptiFine_1.8.9_HD_U_M6_pre2.jar) as well as various other mods. 
 
 
 ## Support, Licenses etc.
